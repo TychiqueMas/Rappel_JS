@@ -118,10 +118,13 @@ buttons.forEach((btn) => {
 });
 
 // Exercice 8
-const output = getElementById("output")
+const output = document.getElementById("output");
+output.innerHTML = `<p>Mbote</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="">`;
 
 // Exercice 9
-// Insérez votre code ici
+let Arrays = ["Brown Cat", "Black Cat", "Chocolate Cat"];
+const listOutput = document.getElementById("listOutput");
+Arrays.forEach((element) => listOutput.innerHTML += `<li>${element}</li>`);
 
 // Exercice 10
 // Ne touchez pas au tableau
@@ -137,7 +140,10 @@ const icons = [
   "shrimp-solid",
 ];
 
-// Insérez votre code ici
+const logo = document.getElementById("logo");
+const iconsLength = icons.length - 1;
+const randomNumber = Math.round(Math.random() * iconsLength);
+logo.src = `${icons}`;
 
 // Exercice 11 : Optionnel
 // Insérez votre code ici
